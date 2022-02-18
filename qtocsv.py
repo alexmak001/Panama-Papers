@@ -1,12 +1,14 @@
-def neotocsv(filename, query):
-    with driver.session(database="neo4j") as session:
+
+
+def neotocsv(filename, query,d):
+    with d.session(database="neo4j") as session:
         results = session.run(query)
 
         # allows to put header for csv
         i = 0
         #final = []
         file = "data/"+filename
-        with open("data/test.csv", "w+") as f:
+        with open(file, "w+") as f:
 
             for record in results:
 
@@ -38,4 +40,4 @@ def neotocsv(filename, query):
                 
             
 
-    driver.close()
+    d.close()
