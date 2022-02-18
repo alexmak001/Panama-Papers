@@ -1,0 +1,76 @@
+
+    <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>neo4j display</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.css" type="text/css" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.js"> </script>
+
+      <style type="text/css">
+        #mynetwork {
+          width: 100%;
+          height: 500px;
+        }
+      </style>
+    </head>
+    <body data-gr-c-s-loaded="true">
+
+    <div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><canvas width="1200" height="800" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas></div></div>
+
+    <script type="text/javascript">
+      // create an array with nodes
+      var nodes = new vis.DataSet(
+      [{'id': 1727228, 'label': 'None'}, {'id': 1863384, 'label': 'None'}, {'id': 1638615, 'label': 'None'}, {'id': 617416, 'label': 'None'}, {'id': 787419, 'label': 'None'}, {'id': 1237519, 'label': 'None'}, {'id': 1288141, 'label': 'None'}, {'id': 1246779, 'label': 'None'}, {'id': 1777243, 'label': 'None'}, {'id': 1877461, 'label': 'None'}, {'id': 1692477, 'label': 'None'}, {'id': 727274, 'label': 'None'}, {'id': 639947, 'label': 'None'}, {'id': 652171, 'label': 'None'}, {'id': 644485, 'label': 'None'}, {'id': 1633851, 'label': 'None'}, {'id': 1874385, 'label': 'None'}, {'id': 1694878, 'label': 'None'}, {'id': 1325290, 'label': 'None'}, {'id': 1495404, 'label': 'None'}, {'id': 20157, 'label': 'None'}, {'id': 191906, 'label': 'None'}, {'id': 832468, 'label': 'None'}, {'id': 117742, 'label': 'None'}, {'id': 113023, 'label': 'None'}, {'id': 66228, 'label': 'None'}, {'id': 559443, 'label': 'None'}, {'id': 367749, 'label': 'None'}, {'id': 161886, 'label': 'None'}, {'id': 495507, 'label': 'None'}, {'id': 1501833, 'label': 'None'}, {'id': 909271, 'label': 'None'}, {'id': 316190, 'label': 'None'}, {'id': 25998, 'label': 'None'}, {'id': 603647, 'label': 'None'}, {'id': 825524, 'label': 'None'}, {'id': 304601, 'label': 'None'}, {'id': 47223, 'label': 'None'}, {'id': 187825, 'label': 'None'}, {'id': 490268, 'label': 'None'}, {'id': 1399274, 'label': 'None'}, {'id': 1330542, 'label': 'None'}, {'id': 729365, 'label': 'None'}, {'id': 838779, 'label': 'None'}, {'id': 622855, 'label': 'None'}, {'id': 974443, 'label': 'None'}, {'id': 1836780, 'label': 'None'}, {'id': 83131, 'label': 'None'}, {'id': 1344000, 'label': 'None'}, {'id': 1499735, 'label': 'None'}, {'id': 754108, 'label': 'None'}, {'id': 629696, 'label': 'None'}, {'id': 854078, 'label': 'None'}, {'id': 10486, 'label': 'None'}, {'id': 1313438, 'label': 'None'}, {'id': 1044560, 'label': 'None'}, {'id': 1292318, 'label': 'None'}, {'id': 1952311, 'label': 'None'}, {'id': 1950977, 'label': 'None'}, {'id': 1548749, 'label': 'None'}, {'id': 1934071, 'label': 'None'}, {'id': 549574, 'label': 'None'}, {'id': 937779, 'label': 'None'}, {'id': 553024, 'label': 'None'}, {'id': 1916630, 'label': 'None'}, {'id': 379481, 'label': 'None'}, {'id': 3986, 'label': 'None'}, {'id': 524283, 'label': 'None'}, {'id': 1715539, 'label': 'None'}, {'id': 1883999, 'label': 'None'}, {'id': 196493, 'label': 'None'}, {'id': 914897, 'label': 'None'}, {'id': 87871, 'label': 'None'}, {'id': 147020, 'label': 'None'}, {'id': 1437655, 'label': 'None'}, {'id': 1343818, 'label': 'None'}, {'id': 417931, 'label': 'None'}, {'id': 138378, 'label': 'None'}, {'id': 530259, 'label': 'None'}, {'id': 889708, 'label': 'None'}, {'id': 179479, 'label': 'None'}, {'id': 446699, 'label': 'None'}, {'id': 148095, 'label': 'None'}, {'id': 548085, 'label': 'None'}, {'id': 1673134, 'label': 'None'}, {'id': 1827433, 'label': 'None'}, {'id': 1452837, 'label': 'None'}, {'id': 1346661, 'label': 'None'}, {'id': 1286583, 'label': 'None'}, {'id': 713404, 'label': 'None'}, {'id': 649210, 'label': 'None'}, {'id': 650433, 'label': 'None'}, {'id': 719217, 'label': 'None'}, {'id': 609198, 'label': 'None'}, {'id': 339058, 'label': 'None'}, {'id': 108558, 'label': 'None'}, {'id': 484320, 'label': 'None'}, {'id': 1288016, 'label': 'None'}, {'id': 232038, 'label': 'None'}, {'id': 63870, 'label': 'None'}, {'id': 1871248, 'label': 'None'}, {'id': 1647119, 'label': 'None'}, {'id': 1830867, 'label': 'None'}, {'id': 1452230, 'label': 'None'}, {'id': 1351948, 'label': 'None'}, {'id': 1132946, 'label': 'None'}, {'id': 1064868, 'label': 'None'}, {'id': 1100913, 'label': 'None'}, {'id': 1132303, 'label': 'None'}, {'id': 1086375, 'label': 'None'}, {'id': 1107094, 'label': 'None'}, {'id': 1273272, 'label': 'None'}, {'id': 1248324, 'label': 'None'}, {'id': 1665965, 'label': 'None'}, {'id': 1832916, 'label': 'None'}, {'id': 18986, 'label': 'None'}, {'id': 1354492, 'label': 'None'}, {'id': 1490427, 'label': 'None'}, {'id': 501570, 'label': 'None'}, {'id': 316964, 'label': 'None'}, {'id': 47115, 'label': 'None'}, {'id': 826124, 'label': 'None'}, {'id': 1092725, 'label': 'None'}, {'id': 1865077, 'label': 'None'}, {'id': 112588, 'label': 'None'}, {'id': 863693, 'label': 'None'}, {'id': 127446, 'label': 'None'}, {'id': 1644858, 'label': 'None'}, {'id': 1943976, 'label': 'None'}, {'id': 1062889, 'label': 'None'}, {'id': 475303, 'label': 'None'}, {'id': 55261, 'label': 'None'}, {'id': 1178834, 'label': 'None'}, {'id': 1087314, 'label': 'None'}, {'id': 1097344, 'label': 'None'}, {'id': 307052, 'label': 'None'}, {'id': 9930, 'label': 'None'}, {'id': 1620559, 'label': 'None'}, {'id': 82959, 'label': 'None'}, {'id': 1951392, 'label': 'None'}, {'id': 486532, 'label': 'None'}, {'id': 915836, 'label': 'None'}, {'id': 10907, 'label': 'None'}, {'id': 1559577, 'label': 'None'}, {'id': 1677842, 'label': 'None'}, {'id': 1894051, 'label': 'None'}, {'id': 1371723, 'label': 'None'}, {'id': 1454466, 'label': 'None'}, {'id': 1476945, 'label': 'None'}, {'id': 1343603, 'label': 'None'}, {'id': 110965, 'label': 'None'}, {'id': 812491, 'label': 'None'}, {'id': 1079669, 'label': 'None'}, {'id': 35270, 'label': 'None'}, {'id': 284625, 'label': 'None'}, {'id': 54263, 'label': 'None'}, {'id': 1863414, 'label': 'None'}, {'id': 1778388, 'label': 'None'}, {'id': 1928484, 'label': 'None'}, {'id': 1698648, 'label': 'None'}, {'id': 896724, 'label': 'None'}, {'id': 213523, 'label': 'None'}, {'id': 62227, 'label': 'None'}, {'id': 815812, 'label': 'None'}, {'id': 1216804, 'label': 'None'}, {'id': 1288158, 'label': 'None'}]
+      );
+
+      // create an array with edges
+      var edges = new vis.DataSet(
+      [{'from': 1727228, 'to': 1863384, 'label': 'registered_address'}, {'from': 1727228, 'to': 1638615, 'label': 'officer_of'}, {'from': 617416, 'to': 787419, 'label': 'registered_address'}, {'from': 1237519, 'to': 1288141, 'label': 'registered_address'}, {'from': 1237519, 'to': 1246779, 'label': 'connected_to'}, {'from': 1777243, 'to': 1877461, 'label': 'registered_address'}, {'from': 1777243, 'to': 1692477, 'label': 'officer_of'}, {'from': 727274, 'to': 639947, 'label': 'officer_of'}, {'from': 727274, 'to': 652171, 'label': 'officer_of'}, {'from': 727274, 'to': 644485, 'label': 'officer_of'}, {'from': 1633851, 'to': 1874385, 'label': 'registered_address'}, {'from': 1633851, 'to': 1694878, 'label': 'officer_of'}, {'from': 1325290, 'to': 1495404, 'label': 'registered_address'}, {'from': 66228, 'to': 559443, 'label': 'registered_address'}, {'from': 367749, 'to': 161886, 'label': 'officer_of'}, {'from': 367749, 'to': 495507, 'label': 'registered_address'}, {'from': 316190, 'to': 25998, 'label': 'officer_of'}, {'from': 603647, 'to': 825524, 'label': 'registered_address'}, {'from': 304601, 'to': 47223, 'label': 'officer_of'}, {'from': 1399274, 'to': 1330542, 'label': 'officer_of'}, {'from': 729365, 'to': 838779, 'label': 'registered_address'}, {'from': 729365, 'to': 622855, 'label': 'officer_of'}, {'from': 1344000, 'to': 1499735, 'label': 'registered_address'}, {'from': 754108, 'to': 629696, 'label': 'officer_of'}, {'from': 1044560, 'to': 1292318, 'label': 'registered_address'}, {'from': 1952311, 'to': 1950977, 'label': 'officer_of'}, {'from': 379481, 'to': 3986, 'label': 'officer_of'}, {'from': 379481, 'to': 524283, 'label': 'registered_address'}, {'from': 1715539, 'to': 1883999, 'label': 'registered_address'}, {'from': 1437655, 'to': 1343818, 'label': 'officer_of'}, {'from': 417931, 'to': 138378, 'label': 'officer_of'}, {'from': 417931, 'to': 530259, 'label': 'registered_address'}, {'from': 889708, 'to': 179479, 'label': 'same_company_as'}, {'from': 446699, 'to': 148095, 'label': 'officer_of'}, {'from': 446699, 'to': 548085, 'label': 'registered_address'}, {'from': 1673134, 'to': 1827433, 'label': 'registered_address'}, {'from': 1452837, 'to': 1346661, 'label': 'officer_of'}, {'from': 713404, 'to': 649210, 'label': 'officer_of'}, {'from': 713404, 'to': 650433, 'label': 'officer_of'}, {'from': 719217, 'to': 609198, 'label': 'officer_of'}, {'from': 339058, 'to': 108558, 'label': 'officer_of'}, {'from': 339058, 'to': 484320, 'label': 'registered_address'}, {'from': 232038, 'to': 63870, 'label': 'officer_of'}, {'from': 1647119, 'to': 1830867, 'label': 'registered_address'}, {'from': 1452230, 'to': 1351948, 'label': 'officer_of'}, {'from': 1132946, 'to': 1064868, 'label': 'registered_address'}, {'from': 1132946, 'to': 1100913, 'label': 'officer_of'}, {'from': 1132303, 'to': 1086375, 'label': 'registered_address'}, {'from': 1132303, 'to': 1107094, 'label': 'officer_of'}, {'from': 1273272, 'to': 1248324, 'label': 'officer_of'}, {'from': 1665965, 'to': 1832916, 'label': 'registered_address'}, {'from': 1354492, 'to': 1490427, 'label': 'registered_address'}, {'from': 316964, 'to': 47115, 'label': 'officer_of'}, {'from': 1644858, 'to': 1943976, 'label': 'registered_address'}, {'from': 1178834, 'to': 1087314, 'label': 'registered_address'}, {'from': 1178834, 'to': 1097344, 'label': 'officer_of'}, {'from': 307052, 'to': 9930, 'label': 'officer_of'}, {'from': 1677842, 'to': 1894051, 'label': 'registered_address'}, {'from': 1371723, 'to': 1454466, 'label': 'same_name_as'}, {'from': 1371723, 'to': 1476945, 'label': 'same_name_as'}, {'from': 1371723, 'to': 1343603, 'label': 'officer_of'}, {'from': 284625, 'to': 54263, 'label': 'officer_of'}, {'from': 1778388, 'to': 1928484, 'label': 'registered_address'}, {'from': 1778388, 'to': 1698648, 'label': 'officer_of'}, {'from': 896724, 'to': 213523, 'label': 'same_company_as'}, {'from': 1216804, 'to': 1288158, 'label': 'registered_address'}]
+      );
+
+      // create a network
+      var container = document.getElementById('mynetwork');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      var options = {
+        nodes: {
+          font: { color: 'white',size: 14 },
+          color: '#F9A6C1',
+          size: 25,
+          shape: 'circle',
+          widthConstraint: 60
+        },
+        edges : {
+          arrows: {
+               to: {enabled: true, scaleFactor: 0.5}
+           },
+          "color": {
+              "inherit": false
+          },
+          font: {size: 14, align: 'middle'},
+          "smooth": {
+              "enabled": true,
+              "type": "dynamic",
+          },
+          "length": 200
+        },
+        "interaction": {
+            "dragNodes": true,
+            "hideEdgesOnDrag": false,
+            "hideNodesOnDrag": false
+        },
+        "physics": {
+            "enabled": true,
+            "stabilization": {
+                "enabled": true,
+                "fit": true,
+
+            }
+        }
+        };
+      var network = new vis.Network(container, data, options);
+    </script>
+
+    </body></html>
+    
