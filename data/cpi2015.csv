@@ -34,7 +34,7 @@ Spain,58,7,4.07
 South Korea,54,9,2.29
 Portugal,64,7,2.5
 Botswana,63,6,2.35
-Brunei Darussalam,68,3,9.62
+Brunei,68,3,9.62
 Israel,61,6,2.78
 Lithuania,59,8,1.92
 Slovenia,60,9,2.93
@@ -111,7 +111,7 @@ Thailand,38,8,2.12
 Viet Nam,31,8,2.56
 Bosnia and Herzegovina,38,6,1.71
 Mongolia,39,8,1.76
-North Macedonia,42,6,5.27
+Macedonia,42,6,5.27
 Panama,39,6,3.01
 Moldova,33,8,2.88
 Philippines,35,8,1.92
@@ -179,3 +179,18 @@ Yemen,18,6,2.66
 Syria,18,4,5.66
 Somalia,8,4,2.32
 South Sudan,15,3,1.45
+Macao,51,,
+Belize,35,,
+Cayman Islands,41,,
+Liechtenstein,87,,
+Aruba,68,,
+Bermuda,64,,
+American Samoa,43,,
+Guernsey,33,,
+Jersey,43,,
+Monaco,45,,
+Puerto Rico,63,,
+Andorra,42,,
+Samoa,52,,
+Côte d'Ivoire,32,,
+Macao,51,,
