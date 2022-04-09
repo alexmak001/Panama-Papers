@@ -20,7 +20,7 @@
 18,Barbados,5.5
 19,Belarus,18
 20,Belgium,25
-21,Belize,1.75
+21,Belize,
 22,Benin,35
 23,Bermuda,0
 24,Bhutan,26
@@ -34,15 +34,15 @@
 32,Burundi,35
 33,Cambodia,20
 34,Cameroon,31.5
-35,Canada,31
+35,Canada,26.5-31
 36,Cape Verde,25
 37,Cayman Islands,0
 38,Central African Republic,30
-39,Chad,35
+39,Chad,
 40,Chile,27
 41,China,25
 42,Colombia,35
-43,Comoros,50
+43,Comoros,
 44,Cook Islands,30
 45,DR Congo,35
 46,Congo,30
@@ -52,21 +52,21 @@
 50,Curaçao,22
 51,Cyprus,12.5
 52,Czech Republic,19
-53,Denmark,25
-54,Djibouti,25
+53,Denmark,22-25
+54,Djibouti,
 55,Dominica,25
 56,Dominican Republic,27
-57,East Timor,10
+57,East Timor,
 58,Ecuador,25
 59,Egypt,22.5
 60,El Salvador,30
 61,Equatorial Guinea,35
 62,Eritrea,
-63,Estonia,20
+63,Estonia ,20
 64,Eswatini (Swaziland),27.5
-65,Ethiopia,30
+65,Ethiopia,
 66,Falkland Islands,26
-67,Micronesia,3
+67,Micronesia,
 68,Fiji,20
 69,Finland,20
 70,France,26.5
@@ -74,17 +74,17 @@
 72,Gambia,31
 73,Germany,29.65
 74,Georgia,0
-75,Ghana,25
+75,Ghana,
 76,Gibraltar,10
 77,Greece,22
-78,Grenada,30
+78,Grenada,
 79,Guatemala,25
-80,Guinea,25
-81,Guinea-Bissau,25
+80,Guinea,
+81,Guinea-Bissau,
 82,Guyana,30
 83,Guernsey,0
 84,Haiti,30
-85,Honduras,25
+85,Honduras,
 86,Hong Kong,16.5
 87,Hungary,9
 88,Iceland,20
@@ -96,7 +96,7 @@
 94,Isle of Man,0
 95,Israel,23
 96,Italy,27.9
-97,Ivory Coast,25
+97,Ivory Coast,
 98,Jamaica,33.3
 99,Japan,29.74
 100,Jersey,0
@@ -109,42 +109,42 @@
 107,North Korea,25
 108,South Korea,24.2
 109,Kyrgyzstan,10
-110,Laos,35
+110,Laos,
 111,Latvia,0
 112,Lebanon,17
-113,Lesotho,25
+113,Lesotho,
 114,Liberia,25
-115,Libya,20
+115,Libya,
 116,Liechtenstein,12.5
 117,Lithuania,15
 118,Luxembourg,28.69
 119,Macau,12
 120,Madagascar,
 121,Madeira,5
-122,Malawi,30
+122,Malawi,
 123,Malaysia,24
 124,Maldives,15
-125,Mali,30
+125,Mali,
 126,Malta,35
-127,Marshall Islands,0
-128,Mauritania,25
+127,Marshall Islands,
+128,Mauritania,
 129,Mauritius,15
 130,Mexico,30
 131,Moldova,12
-132,Monaco,28
+132,Monaco,28[141]
 133,Mongolia,10
 134,Montenegro,9
 135,Montserrat,
 136,Morocco,31
-137,Mozambique,32
-138,Myanmar,30
+137,Mozambique,
+138,Myanmar,
 139,Namibia,32
 140,Nauru,
 141,Nepal,30
 142,Netherlands,25
 143,New Zealand,28
 144,New Caledonia,30
-145,Nicaragua,30
+145,Nicaragua,
 146,Niger,30
 147,Nigeria,30
 148,Niue,
@@ -156,11 +156,11 @@
 154,Palau,
 155,Palestine,15
 156,Panama,25
-157,Papua New Guinea,30
+157,Papua New Guinea,
 158,Paraguay,10
 159,Peru,30
 160,Philippines,30
-161,Pitcairn Islands,0
+161,Pitcairn Islands,
 162,Poland,19
 163,Portugal,21
 164,Puerto Rico,20
@@ -169,29 +169,29 @@
 167,Russia,20
 168,Rwanda,30
 169,Saint Kitts and Nevis,33
-170,Saint Lucia,30
+170,Saint Lucia,
 171,Saint Pierre and Miquelon,
-172,Saint Vincent and the Grenadines,30
-173,Samoa,27
+172,Saint Vincent and the Grenadines,
+173,Samoa,
 174,San Marino,17
-175,São Tomé and Príncipe,37
+175,São Tomé and Príncipe,
 176,Sark,0
 177,Saudi Arabia,15
 178,Senegal,25
 179,Serbia,15
 180,Seychelles,33
-181,Sierra Leone,30
+181,Sierra Leone,
 182,Singapore,17
-183,Sint Maarten,34.5
+183,Sint Maarten,
 184,Slovakia,21
 185,Slovenia,19
-186,Solomon Islands,30
-187,Somalia,12.3
+186,Solomon Islands,
+187,Somalia,
 188,South Africa,28
-189,South Sudan,15
+189,South Sudan,
 190,Spain,25
 191,Sri Lanka,30
-192,Sudan,35
+192,Sudan,
 193,Suriname,36
 194,Sweden,20.6
 195,Switzerland,17.92
@@ -200,15 +200,15 @@
 198,Tajikistan,13
 199,Tanzania,30
 200,Thailand,20
-201,Togo,27
+201,Togo,
 202,Tokelau,
-203,Tonga,25
+203,Tonga,
 204,Trinidad and Tobago,30
 205,Tunisia,30
 206,Turkey,25
-207,Turkmenistan,20
-208,Turks and Caicos Islands,0
-209,Tuvalu,30
+207,Turkmenistan,
+208,Turks and Caicos Islands,
+209,Tuvalu,
 210,Uganda,30
 211,Ukraine,18
 212,United Arab Emirates,0
@@ -216,7 +216,7 @@
 214,United States,21
 215,Uruguay,25
 216,Uzbekistan,12
-217,Vanuatu,0
+217,Vanuatu,
 218,Venezuela,34
 219,Vietnam,20
 220,British Virgin Islands,0
