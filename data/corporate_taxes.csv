@@ -96,7 +96,7 @@
 94,Isle of Man,0
 95,Israel,23
 96,Italy,27.9
-97,Ivory Coast,25
+97,Côte d'Ivoire,25
 98,Jamaica,33.3
 99,Japan,29.74
 100,Jersey,0
@@ -118,7 +118,7 @@
 116,Liechtenstein,12.5
 117,Lithuania,15
 118,Luxembourg,28.69
-119,Macau,12
+119,Macao,12
 120,Madagascar,
 121,Madeira,5
 122,Malawi,30
@@ -147,7 +147,7 @@
 145,Nicaragua,30
 146,Niger,30
 147,Nigeria,30
-148,Niue,
+148,Niue,0
 149,Norfolk Island,
 150,North Macedonia,10
 151,Norway,23
@@ -224,3 +224,4 @@
 222,Yemen,20
 223,Zambia,35
 224,Zimbabwe,25
+225,Sint Maarten (Dutch part),0
