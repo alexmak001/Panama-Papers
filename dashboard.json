@@ -1,5 +1,5 @@
 {
-  "title": "Financial Crimes Enforcement Dashboard 🕵️",
+  "title": "Panama Papers Dashboard 🕵️",
   "version": "2.0",
   "settings": {
     "pagenumber": 0,
@@ -7,7 +7,7 @@
     "parameters": {
       "neodash_entity_name": null,
       "neodash_country_name": null,
-      "neodash_name": " "
+      "neodash_name": "BEAR"
     },
     "fullscreenEnabled": true
   },
@@ -25,7 +25,8 @@
             "Officer": "name"
           },
           "settings": {
-            "nodePositions": {}
+            "nodePositions": {},
+            "frozen": false
           }
         },
         {
@@ -35,6 +36,7 @@
           "type": "graph",
           "height": "3",
           "selection": {
+            "_Neodash_Dashboard": "name",
             "Entity": "name",
             "Intermediary": "name",
             "Address": "name",
@@ -47,7 +49,7 @@
         },
         {
           "title": "Nodes based on a person's name",
-          "query": "MATCH (o:Officer)\nWHERE o.name CONTAINS $neodash_name AND o.sourceID = \"Panama Papers\"\nRETURN o\nLIMIT 10\n\n",
+          "query": "MATCH (o:Officer)\nWHERE o.name CONTAINS $neodash_name AND o.sourceID = \"Panama Papers\"\nRETURN o\nLIMIT 50\n\n",
           "width": "8",
           "type": "graph",
           "height": "3",
@@ -60,7 +62,7 @@
           "parameters": ""
         },
         {
-          "title": "",
+          "title": "Enter Officer's name",
           "query": "RETURN true",
           "width": 3,
           "type": "select",
@@ -74,95 +76,19 @@
             "helperText": "Input Name",
             "manualPropertyNameSpecification": true
           }
-        }
-      ]
-    },
-    {
-      "title": "Entities",
-      "reports": [
-        {
-          "title": "Entity Investigator 🔎",
-          "query": "You can use this page to explore information about a single entity in the dataset. All reports are automatically updated based on the selected entity.\n\n**Hint**: Try typing **ING Bank NV** \nin the \"Entity name\" box to the right of this text.\n\n\n",
-          "width": 3,
-          "type": "text",
-          "height": 3,
-          "selection": {},
-          "settings": {}
         },
         {
-          "title": "Select an entity to view reports",
-          "query": "MATCH (n:`Entity`) \nWHERE toLower(toString(n.`name`)) CONTAINS toLower($input) \nRETURN DISTINCT n.`name` as value LIMIT 5",
-          "width": 3,
-          "type": "select",
-          "height": 3,
-          "selection": {},
-          "settings": {
-            "type": "Node Property",
-            "entityType": "Entity",
-            "propertyType": "name",
-            "parameterName": "neodash_entity_name"
-          }
-        },
-        {
-          "title": "Details ",
-          "query": "MATCH (e:Entity)\nWHERE e.name = $neodash_entity_name\nWITH e LIMIT 1\nMATCH (c:Country)--(e)--(f:Filing)\nWITH [\"Entity full name: \" + e.name, \n      \"Country of origin: \"+c.name,  \n      \"Total filings: $\"+ toInteger(sum(f.amount)/1000000) + \" million\",\n      \"Start of operations: \"+ toString(date((min(f.begin))))\n] as data\nUNWIND data as Information\nRETURN Information\n",
-          "width": "3",
-          "type": "table",
-          "height": "3",
-          "selection": {},
-          "settings": {}
-        },
-        {
-          "title": "Entity interactions",
-          "query": "MATCH path=(e:Entity)<--()-->(e2:Entity)\nWHERE e.name = $neodash_entity_name\nWITH DISTINCT e, e2\nRETURN e, e2, apoc.create.vRelationship(e, \"INTERACTS\", {}, e2) \n\n\n",
-          "width": 3,
-          "type": "map",
-          "height": 3,
-          "selection": {
-            "Entity": "(no label)"
-          },
-          "settings": {
-            "hideSelections": true
-          }
-        },
-        {
-          "title": "Who receives most money from this entity?",
-          "query": "MATCH path=(e:Entity)<--(f:Filing)-->(e2:Entity)\nWHERE e.name = $neodash_entity_name\nWITH DISTINCT e, f, e2\nRETURN e2.name as `Other`, sum(f.amount) as Amount\nORDER BY Amount ASC",
-          "width": "6",
-          "type": "bar",
+          "title": "First degree",
+          "query": "MATCH (o:Officer)\nWHERE o.name CONTAINS $neodash_name AND o.sourceID = \"Panama Papers\"\nMATCH path = (o)-[r]->(:Entity)\nRETURN path LIMIT 100\n\n\n",
+          "width": "8",
+          "type": "graph",
           "height": "3",
           "selection": {
-            "index": "Other",
-            "value": "Amount",
-            "key": "(none)"
+            "Officer": "name",
+            "Entity": "name"
           },
           "settings": {
-            "valueScale": "linear",
-            "marginLeft": 90,
-            "marginBottom": 100,
-            "marginRight": 50,
-            "colors": "paired",
-            "groupMode": "grouped"
-          }
-        },
-        {
-          "title": "Details on a filing by the entity",
-          "query": "MATCH path=(e:Entity)<--(f:Filing)\nWHERE e.name = $neodash_entity_name\nRETURN f LIMIT 1\n",
-          "width": 3,
-          "type": "json",
-          "height": 3,
-          "selection": {},
-          "settings": {}
-        },
-        {
-          "title": "Number of Filings",
-          "query": "MATCH (e:Entity)--(:Filing)\nWHERE e.name = $neodash_entity_name\nRETURN COUNT(*)\n\n",
-          "width": 3,
-          "type": "value",
-          "height": 3,
-          "selection": {},
-          "settings": {
-            "fontSize": 80
+            "nodePositions": {}
           }
         }
       ]
@@ -228,22 +154,6 @@
             "marginBottom": 60,
             "marginLeft": 120,
             "marginRight": 120
-          }
-        },
-        {
-          "title": "Number of filing per year",
-          "query": "MATCH (f:Filing)\nWHERE f.begin IS NOT NULL\nWITH f, date(f.begin).year as Year\nRETURN Year, COUNT(f) as Total\nORDER BY Year ASC\n",
-          "width": "6",
-          "type": "line",
-          "height": "3",
-          "selection": {
-            "x": "Year",
-            "value": [
-              "Total"
-            ]
-          },
-          "settings": {
-            "marginLeft": 60
           }
         },
         {
